@@ -1,9 +1,9 @@
-let botao = document.getElementById("botao");
+var botao = document.getElementById("botao");
 let click = 0;
 
 botao.addEventListener("click", function(){
     click++;
-
+    console.log(click);
     if(click % 2 != 0){
         document.querySelector("body").setAttribute("bgcolor", "green");
 
